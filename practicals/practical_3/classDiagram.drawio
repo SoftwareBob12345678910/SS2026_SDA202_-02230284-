@@ -1,0 +1,231 @@
+<mxfile host="65bd71144e">
+    <diagram id="4mQORSbeLyT2GUcvJ9Pp" name="Page-1">
+        <mxGraphModel dx="1200" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1700" pageHeight="2200" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                
+                <!-- Student Class -->
+                <mxCell id="student" value="Student" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="50" y="50" width="160" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="studentAttrs" value="- studentID: String&#xa;- name: String&#xa;- email: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="student">
+                    <mxGeometry y="26" width="160" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="studentOps" value="+ submitAssignment()&#xa;+ viewGrade()&#xa;+ downloadFeedback()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="student">
+                    <mxGeometry y="86" width="160" height="54" as="geometry"/>
+                </mxCell>
+                
+                <!-- Professor Class -->
+                <mxCell id="professor" value="Professor" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="270" y="50" width="160" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="professorAttrs" value="- professorID: String&#xa;- name: String&#xa;- email: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="professor">
+                    <mxGeometry y="26" width="160" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="professorOps" value="+ createAssignment()&#xa;+ reviewPlagiarism()&#xa;+ overrideGrade()&#xa;+ viewSubmissions()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="professor">
+                    <mxGeometry y="86" width="160" height="54" as="geometry"/>
+                </mxCell>
+                
+                <!-- Assignment Class -->
+                <mxCell id="assignment" value="Assignment" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="490" y="50" width="160" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="assignmentAttrs" value="- assignmentID: String&#xa;- title: String&#xa;- deadline: DateTime&#xa;- professor: Professor" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="assignment">
+                    <mxGeometry y="26" width="160" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="assignmentOps" value="+ getSubmissions()&#xa;+ isOverdue()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="assignment">
+                    <mxGeometry y="96" width="160" height="44" as="geometry"/>
+                </mxCell>
+                
+                <!-- Submission Class -->
+                <mxCell id="submission" value="Submission" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="710" y="50" width="160" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="submissionAttrs" value="- submissionID: String&#xa;- student: Student&#xa;- codeFile: File&#xa;- submissionTime: DateTime" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="submission">
+                    <mxGeometry y="26" width="160" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="submissionOps" value="+ updateStatus()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="submission">
+                    <mxGeometry y="96" width="160" height="44" as="geometry"/>
+                </mxCell>
+                
+                <!-- Grade Class -->
+                <mxCell id="grade" value="Grade" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="930" y="50" width="160" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="gradeAttrs" value="- gradeID: String&#xa;- automatedScore: Float&#xa;- manualOverride: Float&#xa;- finalGrade: Float" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="grade">
+                    <mxGeometry y="26" width="160" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="gradeOps" value="+ calculateFinalGrade()&#xa;+ approveGrade()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="grade">
+                    <mxGeometry y="96" width="160" height="44" as="geometry"/>
+                </mxCell>
+                
+                <!-- TestResult Class -->
+                <mxCell id="testresult" value="TestResult" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="50" y="280" width="160" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="testresultAttrs" value="- testResultID: String&#xa;- testsPassed: Integer&#xa;- testsTotal: Integer&#xa;- executionTime: Float" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="testresult">
+                    <mxGeometry y="26" width="160" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="testresultOps" value="+ getPassPercentage()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="testresult">
+                    <mxGeometry y="96" width="160" height="34" as="geometry"/>
+                </mxCell>
+                
+                <!-- PlagiarismReport Class -->
+                <mxCell id="plagiarism" value="PlagiarismReport" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="270" y="280" width="160" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="plagiarismAttrs" value="- reportID: String&#xa;- selfPlagiarism: Float&#xa;- externalPlagiarism: Float&#xa;- peerMatches: List" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="plagiarism">
+                    <mxGeometry y="26" width="160" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="plagiarismOps" value="+ getFinalScore()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="plagiarism">
+                    <mxGeometry y="96" width="160" height="34" as="geometry"/>
+                </mxCell>
+                
+                <!-- TurnItInService Class -->
+                <mxCell id="turnitin" value="TurnItInService" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="490" y="280" width="160" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="turnitinAttrs" value="- serviceID: String&#xa;- apiKey: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="turnitin">
+                    <mxGeometry y="26" width="160" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="turnitinOps" value="+ submitForCheck()&#xa;+ getCheckResult()&#xa;+ generateReport()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="turnitin">
+                    <mxGeometry y="76" width="160" height="54" as="geometry"/>
+                </mxCell>
+                
+                <!-- TurnItInData Class -->
+                <mxCell id="turnitindata" value="TurnItInData" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="710" y="280" width="160" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="turnitindataAttrs" value="- resultID: String&#xa;- similarityPercentage: Float&#xa;- flaggedSections: List&#xa;- externalSources: List" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="turnitindata">
+                    <mxGeometry y="26" width="160" height="84" as="geometry"/>
+                </mxCell>
+                
+                <!-- LMSIntegration Class -->
+                <mxCell id="lms" value="LMSIntegration" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="930" y="280" width="160" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="lmsAttrs" value="- lmsID: String&#xa;- connectionURL: String&#xa;- apiCredentials: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="lms">
+                    <mxGeometry y="26" width="160" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="lmsOps" value="+ exportGrade()&#xa;+ generateAuditTrail()&#xa;+ syncWithLMS()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="lms">
+                    <mxGeometry y="86" width="160" height="44" as="geometry"/>
+                </mxCell>
+                
+                <!-- AuditTrail Class -->
+                <mxCell id="audit" value="AuditTrail" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="1150" y="280" width="160" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="auditAttrs" value="- trailID: String&#xa;- action: String&#xa;- actor: String&#xa;- timestamp: DateTime" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="audit">
+                    <mxGeometry y="26" width="160" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="auditOps" value="+ logAction()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="audit">
+                    <mxGeometry y="96" width="160" height="34" as="geometry"/>
+                </mxCell>
+                
+                <!-- Relationships -->
+                <!-- Student -> Submission -->
+                <mxCell id="rel1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;dashed=0;dashPattern=1 4;strokeWidth=2;" edge="1" parent="1" source="student" target="submission">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="130" y="220"/>
+                            <mxPoint x="790" y="220"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                
+                <!-- Professor -> Assignment -->
+                <mxCell id="rel2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;dashed=0;dashPattern=1 4;strokeWidth=2;" edge="1" parent="1" source="professor" target="assignment">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="350" y="220"/>
+                            <mxPoint x="570" y="220"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                
+                <!-- Assignment -> Submission -->
+                <mxCell id="rel3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;dashed=0;dashPattern=1 4;strokeWidth=2;" edge="1" parent="1" source="assignment" target="submission">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="650" y="190"/>
+                            <mxPoint x="700" y="190"/>
+                            <mxPoint x="700" y="190"/>
+                            <mxPoint x="710" y="190"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                
+                <!-- Submission -> TestResult -->
+                <mxCell id="rel4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;dashed=0;dashPattern=1 4;strokeWidth=2;" edge="1" parent="1" source="submission" target="testresult">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="790" y="220"/>
+                            <mxPoint x="130" y="220"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                
+                <!-- Submission -> PlagiarismReport -->
+                <mxCell id="rel5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;dashed=0;dashPattern=1 4;strokeWidth=2;" edge="1" parent="1" source="submission" target="plagiarism">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="790" y="240"/>
+                            <mxPoint x="350" y="240"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                
+                <!-- Submission -> Grade -->
+                <mxCell id="rel6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;dashed=0;dashPattern=1 4;strokeWidth=2;" edge="1" parent="1" source="submission" target="grade">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="870" y="180"/>
+                            <mxPoint x="1010" y="180"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                
+                <!-- PlagiarismReport -> TurnItInData -->
+                <mxCell id="rel7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;dashed=0;dashPattern=1 4;strokeWidth=2;" edge="1" parent="1" source="plagiarism" target="turnitindata">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="430" y="345"/>
+                            <mxPoint x="710" y="345"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                
+                <!-- TurnItInService -> TurnItInData -->
+                <mxCell id="rel8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;dashed=0;dashPattern=1 4;strokeWidth=2;" edge="1" parent="1" source="turnitin" target="turnitindata">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="650" y="345"/>
+                            <mxPoint x="710" y="345"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                
+                <!-- Grade -> LMSIntegration -->
+                <mxCell id="rel9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;dashed=0;dashPattern=1 4;strokeWidth=2;" edge="1" parent="1" source="grade" target="lms">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="1010" y="220"/>
+                            <mxPoint x="1010" y="220"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                
+                <!-- LMSIntegration -> AuditTrail -->
+                <mxCell id="rel10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;dashed=0;dashPattern=1 4;strokeWidth=2;" edge="1" parent="1" source="lms" target="audit">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="1090" y="345"/>
+                            <mxPoint x="1150" y="345"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

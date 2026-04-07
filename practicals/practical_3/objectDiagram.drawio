@@ -1,0 +1,103 @@
+<mxfile host="65bd71144e">
+    <diagram id="objectDiagram" name="Object Diagram">
+        <mxGraphModel dx="1456" dy="838" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1700" pageHeight="2200" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="title" value="Object Diagram: Two Student Submissions Scenario" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=18;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="350" y="20" width="700" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="john" value="Karma_N: Student&lt;br&gt;studentID = STU001&lt;br&gt;name = Karma N&lt;br&gt;email = Karma@uni.edu" style="rounded=1;html=1;fillColor=#e3f2fd;strokeColor=#1976d2;strokeWidth=2;fontSize=10;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="60" y="100" width="150" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="jane" value="Tashi_D: Student&lt;br&gt;studentID = STU002&lt;br&gt;name = Tashi D&lt;br&gt;email = Tashi@uni.edu" style="rounded=1;html=1;fillColor=#e3f2fd;strokeColor=#1976d2;strokeWidth=2;fontSize=10;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="270" y="100" width="150" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="prof" value="dr_Pema: Professor&lt;br&gt;professorID = PROF001&lt;br&gt;name = Dr. Pema&lt;br&gt;email = Pema@uni.edu" style="rounded=1;html=1;fillColor=#fff3e0;strokeColor=#f57c00;strokeWidth=2;fontSize=10;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="480" y="100" width="150" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="assign" value="pa_01: Assignment&#xa;assignmentID = ASS001&#xa;title = Library System&#xa;deadline = 2026-04-15" style="rounded=1;html=1;fillColor=#ffebee;strokeColor=#c62828;strokeWidth=2;fontSize=10;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="690" y="100" width="150" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="sub1" value="sub001: Submission&#xa;submissionID = SUB001&#xa;submissionTime = 2026-04-10&#xa;status = Graded" style="rounded=1;html=1;fillColor=#e8f5e9;strokeColor=#388e3c;strokeWidth=2;fontSize=9;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="60" y="270" width="150" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="sub2" value="sub002: Submission&#xa;submissionID = SUB002&#xa;submissionTime = 2026-04-11&#xa;status = Graded" style="rounded=1;html=1;fillColor=#e8f5e9;strokeColor=#388e3c;strokeWidth=2;fontSize=9;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="270" y="270" width="150" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="pr1" value="pr001: PlagiarismReport&#xa;reportID = PR001&#xa;selfPlagiarism = 5%&#xa;externalPlagiarism = 12%" style="rounded=1;html=1;fillColor=#f3e5f5;strokeColor=#7b1fa2;strokeWidth=2;fontSize=9;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="480" y="270" width="150" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="pr2" value="pr002: PlagiarismReport&#xa;reportID = PR002&#xa;selfPlagiarism = 2%&#xa;externalPlagiarism = 8%" style="rounded=1;html=1;fillColor=#f3e5f5;strokeColor=#7b1fa2;strokeWidth=2;fontSize=9;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="690" y="270" width="150" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="tr1" value="tr001: TestResult&#xa;testsPassed = 18&#xa;testsTotal = 20&#xa;passPercentage = 90%" style="rounded=1;html=1;fillColor=#e0f2f1;strokeColor=#00796b;strokeWidth=2;fontSize=9;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="60" y="450" width="150" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="tr2" value="tr002: TestResult&#xa;testsPassed = 20&#xa;testsTotal = 20&#xa;passPercentage = 100%" style="rounded=1;html=1;fillColor=#e0f2f1;strokeColor=#00796b;strokeWidth=2;fontSize=9;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="270" y="450" width="150" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="gr1" value="grd001: Grade&#xa;gradeID = GRD001&#xa;automatedScore = 90.0&#xa;finalGrade = 90.0&#xa;isApproved = true" style="rounded=1;html=1;fillColor=#fce4ec;strokeColor=#c2185b;strokeWidth=2;fontSize=9;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="480" y="450" width="150" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="gr2" value="grd002: Grade&#xa;gradeID = GRD002&#xa;automatedScore = 100.0&#xa;manualOverride = 95.0&#xa;finalGrade = 95.0" style="rounded=1;html=1;fillColor=#fce4ec;strokeColor=#c2185b;strokeWidth=2;fontSize=9;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="690" y="450" width="150" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="lms" value="lms001: LMSIntegration&#xa;lmsID = LMS001&#xa;connectionURL = https://lms&#xa;status = Connected" style="rounded=1;html=1;fillColor=#e0f7fa;strokeColor=#0097a7;strokeWidth=2;fontSize=9;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="900" y="270" width="150" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="at1" value="at001: AuditTrail&#xa;action = Grade Exported&#xa;actor = PROF001&#xa;timestamp = 2026-04-12" style="rounded=1;html=1;fillColor=#fffde7;strokeColor=#fbc02d;strokeWidth=2;fontSize=8;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="900" y="450" width="150" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="at2" value="at002: AuditTrail&#xa;action = Grade Override&#xa;actor = PROF001&#xa;timestamp = 2026-04-12" style="rounded=1;html=1;fillColor=#fffde7;strokeColor=#fbc02d;strokeWidth=2;fontSize=8;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="1110" y="450" width="150" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="edge1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;strokeWidth=2;" parent="1" source="john" target="sub1" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="edge2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;strokeWidth=2;" parent="1" source="jane" target="sub2" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="edge3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;strokeWidth=2;" parent="1" source="prof" target="assign" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="edge4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;strokeWidth=2;" parent="1" source="sub1" target="tr1" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="edge5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;strokeWidth=2;" parent="1" source="sub2" target="tr2" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="edge6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;strokeWidth=2;" parent="1" source="sub1" target="pr1" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="edge7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;strokeWidth=2;" parent="1" source="sub2" target="pr2" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="edge8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=1;entryX=0;entryY=0;dashed=1;strokeWidth=2;" parent="1" source="sub1" target="gr1" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="edge9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=1;entryX=0;entryY=0;dashed=1;strokeWidth=2;" parent="1" source="sub2" target="gr2" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="edge10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;dashed=1;strokeWidth=2;" parent="1" source="prof" target="gr1" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="edge11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=1;entryX=0;entryY=0;dashed=1;strokeWidth=2;" parent="1" source="prof" target="gr2" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="edge12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;strokeWidth=2;" parent="1" source="gr1" target="lms" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="edge13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;strokeWidth=2;" parent="1" source="gr2" target="lms" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="edge14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;strokeWidth=2;" parent="1" source="lms" target="at1" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="edge15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=1;entryX=0;entryY=0.5;strokeWidth=2;" parent="1" source="gr2" target="at2" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
